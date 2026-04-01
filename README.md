@@ -26,6 +26,24 @@
   <a href="https://github.com/sponsors/instructkr"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github&style=for-the-badge" alt="Sponsor on GitHub" /></a>
 </p>
 
+## Philosophy
+
+If you are staring at the generated files, you are looking at the wrong layer.
+
+The Python rewrite was a byproduct, and the Rust port is too. The real subject of this repository is the **agent coordination system** that made both possible: a human giving direction in Discord, agents decomposing the work, implementing in parallel, reviewing each other, fixing failures, and shipping without constant babysitting.
+
+That is the point of this project.
+
+- **the code is evidence, not the product**
+- **the system that produces the code is the thing worth studying**
+- **architectural clarity, task decomposition, and coordination matter more than typing speed**
+- **clean-room rebuilding is valuable because it exposes process, not because it preserves an archive**
+- **the future of software work is better agent orchestration, not more manual pane babysitting**
+
+This repository exists to document and improve that loop: direction from the human, execution by the agents, notifications routed outside the context window, and repeated verification until the result is good enough to ship.
+
+In other words: **stop staring at the files**. Study the workflow that produced them.
+
 > [!IMPORTANT]
 > **Rust port is now in progress** on the [`dev/rust`](https://github.com/instructkr/claw-code/tree/dev/rust) branch and is expected to be merged into main today. The Rust implementation aims to deliver a faster, memory-safe harness runtime. Stay tuned — this will be the definitive version of the project.
 
